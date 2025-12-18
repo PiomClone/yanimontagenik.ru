@@ -200,16 +200,16 @@ body {
 .link-item {
     display: flex;
     align-items: center;
-    padding: 8px 15px; /* Уменьшил вертикальные отступы для более плоского вида */
-    margin: 5px 0; /* Еще меньше отступов между кнопками */
-    border-radius: 8px;
+    padding: 12px 15px;
+    margin: 8px 0; /* Увеличенные отступы между кнопками */
+    border-radius: 10px;
     text-decoration: none;
     background: linear-gradient(135deg, #6d8d6d, #5d755d);
     color: white;
     transition: all 0.3s ease;
     text-align: left;
     border: none;
-    box-shadow: 0 3px 10px rgba(43, 65, 44, 0.4);
+    box-shadow: 0 4px 15px rgba(43, 65, 44, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -259,27 +259,27 @@ body {
 /* Убраны постоянные анимации с кнопок */
 
 .telegram {
-    background: #c2255c !important;
+    background: linear-gradient(135deg, #d66e8c, #c2255c) !important;
 }
 
 .vk {
-    background: #ff4d89 !important;
+    background: linear-gradient(135deg, #ff7aa8, #ff4d89) !important;
 }
 
 .instagram {
-    background: #a61e4d !important;
+    background: linear-gradient(135deg, #c05a7c, #a61e4d) !important;
 }
 
 .fbsl {
-    background: #fcc419 !important;
+    background: linear-gradient(135deg, #fdd86c, #fcc419) !important;
 }
 
 .telegram-fbsl {
-    background: #ffd43b !important;
+    background: linear-gradient(135deg, #ffe285, #ffd43b) !important;
 }
 
 .spb-snowboard {
-    background: #748ffc !important;
+    background: linear-gradient(135deg, #9bb4fc, #748ffc) !important;
 }
 
 .icon {
@@ -323,10 +323,11 @@ body {
 .text-block {
     margin: 20px 0;
     text-align: center;
-    padding: 15px;
-    background: #fffaf4; /* Цвет фона как в оригинальной шапке */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    background: transparent; /* Прозрачный фон, чтобы не выделялось как кнопка */
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
 }
 
 .text-block p {
