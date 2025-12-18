@@ -6,12 +6,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #fffaf4;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    color: #143211;
 }
 
 .container {
@@ -21,26 +22,27 @@ body {
 
 .profile-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: #143211;
 }
 
 .profile-header {
     padding: 40px 30px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background-color: #fffaf4;
+    color: #143211;
     position: relative;
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 95px;
+    height: 95px;
     margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid white;
+    border: 3px solid #5d755d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,15 +55,18 @@ body {
     object-fit: cover;
 }
 
-.profile-info h1 {
-    font-size: 28px;
+.profile-title {
+    font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 500;
+    color: #5d755d;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bio {
-    font-size: 16px;
+    font-size: 15px;
     opacity: 0.9;
+    color: #5d755d;
 }
 
 .links-section {
@@ -73,47 +78,52 @@ body {
     align-items: center;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 12px;
+    border-radius: 10px;
     text-decoration: none;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #5d755d;
+    color: #ac4302;
+    transition: all 0.3s ease;
     text-align: left;
+    border: none;
+    box-shadow: 0 4px 8px rgba(43, 65, 44, 0.3);
 }
 
 .link-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(43, 65, 44, 0.4);
+    background-color: #5d755d;
+    opacity: 0.9;
 }
 
 .telegram {
-    background: #c2255c;
+    background: #c2255c !important;
 }
 
 .vk {
-    background: #ff4d89;
+    background: #ff4d89 !important;
 }
 
 .instagram {
-    background: #a61e4d;
+    background: #a61e4d !important;
 }
 
 .fbsl {
-    background: #fcc419;
+    background: #fcc419 !important;
 }
 
 .telegram-fbsl {
-    background: #ffd43b;
+    background: #ffd43b !important;
 }
 
 .spb-snowboard {
-    background: #748ffc;
+    background: #748ffc !important;
 }
 
 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,12 +136,14 @@ body {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 4px;
+    color: white;
 }
 
 .content p {
     font-size: 14px;
     opacity: 0.9;
     margin: 0;
+    color: white;
 }
 
 .divider {
@@ -142,56 +154,56 @@ body {
 }
 
 .divider i {
-    color: #667eea;
+    color: #c2255c;
     font-size: 24px;
 }
 
 .text-block {
-    background: #f8f9fa;
+    background: #ebdece;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 10px;
     margin: 10px 0;
     text-align: center;
 }
 
 .text-block p {
-    color: #667eea;
+    color: #143211;
     font-size: 15px;
     line-height: 1.5;
 }
 
 .text-block strong {
-    color: #c2255c;
+    color: #143211;
 }
 
 @media (max-width: 520px) {
     .container {
         max-width: 100%;
     }
-    
+
     .profile-header {
         padding: 30px 20px 15px;
     }
-    
+
     .avatar {
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
     }
-    
-    .profile-info h1 {
-        font-size: 24px;
+
+    .profile-title {
+        font-size: 16px;
     }
-    
+
     .link-item {
         padding: 12px;
     }
-    
+
     .icon {
         width: 45px;
         height: 45px;
         font-size: 18px;
     }
-    
+
     .content h3 {
         font-size: 15px;
     }
