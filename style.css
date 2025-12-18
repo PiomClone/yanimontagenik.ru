@@ -230,21 +230,24 @@ body {
 }
 
 .text-block {
-    background: #ebdece;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
+    padding: 10px 0;
 }
 
 .text-block p {
     color: #143211;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
 }
 
 .text-block strong {
-    color: #143211;
+    color: #c2255c;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .snowflakes {
