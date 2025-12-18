@@ -64,11 +64,10 @@ body {
 
 .profile-header {
     padding: 40px 30px 20px;
-    background-color: rgb(240, 101, 149); /* #f06595 - оригинальный цвет из legacy */
-    color: white;
+    background: #fffaf4; /* Цвет фона из оригинального legacy дизайна */
+    color: #143211; /* Цвет текста из оригинального дизайна */
     position: relative;
-    border-bottom: 2px solid #ebdece;
-    box-shadow: 0 4px 10px rgba(227, 218, 201, 0.5);
+    border-bottom: 1px solid rgba(227, 218, 201, 0.5);
 }
 
 @keyframes gradientFlow {
