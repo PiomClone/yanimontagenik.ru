@@ -1,0 +1,15 @@
+{
+    "name": "Yani Montagenik",
+    "short_name": "yanimontagenik",
+    "icons": [
+        {
+            "src": "assets/profile_image.jpg",
+            "sizes": "300x300",
+            "type": "image/jpg"
+        }
+    ],
+    "theme_color": "#fffaf4",
+    "background_color": "#fffaf4",
+    "start_url": "https://yanimontagenik.ru/?from=app",
+    "display": "standalone"
+}
