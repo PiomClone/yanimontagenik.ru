@@ -63,11 +63,9 @@ body {
 
 .profile-header {
     padding: 40px 30px 20px;
-    background: linear-gradient(135deg, #fffaf4, #f0e6d2, #ebdece, #fffaf4);
-    background-size: 400% 400%;
-    color: #143211;
+    background-color: rgb(240, 101, 149); /* #f06595 - оригинальный цвет из legacy */
+    color: white;
     position: relative;
-    animation: gradientFlow 8s ease infinite;
     border-bottom: 2px solid #ebdece;
     box-shadow: 0 4px 10px rgba(227, 218, 201, 0.5);
 }
@@ -107,7 +105,7 @@ body {
     font-size: 32px;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #a61e4d; /* Оригинальный цвет из legacy данных */
+    color: white; /* Новый цвет для контраста с фоном шапки */
     font-family: 'Great Vibes', cursive;
     text-align: center;
     font-style: normal;
@@ -121,7 +119,7 @@ body {
     font-size: 32px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
-    color: #a61e4d !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
     letter-spacing: 1px !important;
@@ -133,7 +131,7 @@ body {
     font-size: 32px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
-    color: #a61e4d !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
     letter-spacing: 1px !important;
@@ -145,7 +143,7 @@ body {
     font-size: 32px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
-    color: #a61e4d !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
     letter-spacing: 1px !important;
@@ -157,7 +155,7 @@ body {
     font-size: 32px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
-    color: #a61e4d !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
     letter-spacing: 1px !important;
@@ -167,7 +165,7 @@ body {
 .bio {
     font-size: 15px;
     opacity: 0.9;
-    color: #a61e4d; /* Оригинальный цвет био из legacy данных */
+    color: white; /* Новый цвет для контраста с фоном шапки */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
