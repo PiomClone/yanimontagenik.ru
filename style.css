@@ -332,9 +332,10 @@ body {
 .text-block p {
     color: white;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 500;
     margin: 0;
+    text-align: center;
 }
 
 .text-block strong {
