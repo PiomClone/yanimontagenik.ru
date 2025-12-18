@@ -105,12 +105,12 @@ body {
 .profile-title {
     font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 400;
     color: white; /* Новый цвет для контраста с фоном шапки */
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Cookie', cursive;
     text-align: center;
     font-style: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     animation: textGlow 4s ease-in-out infinite;
 }
 
@@ -164,15 +164,15 @@ body {
 }
 
 /* Шрифт для основного заголовка */
-.profile-title-dancing-script {
-    font-family: 'Dancing Script', cursive !important;
+.profile-title-cookie {
+    font-family: 'Cookie', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
-    letter-spacing: 1px !important;
+    letter-spacing: 0.5px !important;
     animation: textGlow 4s ease-in-out infinite !important;
 }
 
