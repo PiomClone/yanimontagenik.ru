@@ -50,6 +50,11 @@ function changeProfileFont(fontClass) {
     console.log('Font changed to:', fontClass);
 }
 
+// Функция для установки Dancing Script как основного шрифта
+function setDancingScriptFont() {
+    changeProfileFont('profile-title-dancing-script');
+}
+
 // Add keyboard shortcut to show comparison
 document.addEventListener('keydown', function(e) {
     if (e.key === 'f' && e.ctrlKey) {

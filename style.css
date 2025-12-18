@@ -104,9 +104,9 @@ body {
 .profile-title {
     font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 700;
     color: white; /* Новый цвет для контраста с фоном шапки */
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     font-style: normal;
     letter-spacing: 1px;
@@ -118,7 +118,7 @@ body {
     font-family: 'Great Vibes', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
@@ -130,7 +130,7 @@ body {
     font-family: 'Alex Brush', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
@@ -142,7 +142,7 @@ body {
     font-family: 'Allura', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
@@ -154,7 +154,20 @@ body {
     font-family: 'Mr De Haviland', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 1px !important;
+    animation: textGlow 4s ease-in-out infinite !important;
+}
+
+/* Шрифт для основного заголовка */
+.profile-title-dancing-script {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+    font-weight: 700 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
     text-align: center !important;
     font-style: normal !important;
@@ -180,17 +193,17 @@ body {
 .link-item {
     display: flex;
     align-items: center;
-    padding: 12px 15px; /* Уменьшил вертикальные отступы */
-    margin: 6px 0; /* Уменьшил отступы между кнопками */
-    border-radius: 10px;
+    padding: 8px 15px; /* Уменьшил вертикальные отступы для более плоского вида */
+    margin: 5px 0; /* Еще меньше отступов между кнопками */
+    border-radius: 8px;
     text-decoration: none;
     background: linear-gradient(135deg, #6d8d6d, #5d755d);
     color: white;
     transition: all 0.3s ease;
     text-align: left;
     border: none;
-    box-shadow: 0 4px 15px rgba(43, 65, 44, 0.4);
-    animation: blink 4s infinite;
+    box-shadow: 0 3px 10px rgba(43, 65, 44, 0.4);
+    animation: blink 3s infinite;
     position: relative;
     overflow: hidden;
 }
@@ -237,28 +250,35 @@ body {
     margin: 0;
 }
 
+/* Анимации для кнопок с поочередной задержкой как в legacy */
+.link-item.instagram {
+    animation: blink 3s infinite;
+    animation-delay: 0s; /* Первая кнопка */
+}
+
 .link-item.telegram {
-    animation: blink 2.5s infinite;
+    animation: blink 3s infinite;
+    animation-delay: 0.5s; /* Задержка для второй кнопки */
 }
 
 .link-item.vk {
-    animation: blink 3.2s infinite;
-}
-
-.link-item.instagram {
-    animation: blink 2.8s infinite;
+    animation: blink 3s infinite;
+    animation-delay: 1s; /* Задержка для третьей кнопки */
 }
 
 .link-item.fbsl {
-    animation: blink 3.5s infinite;
+    animation: blink 3s infinite;
+    animation-delay: 1.5s; /* Задержка для четвертой кнопки */
 }
 
 .link-item.telegram-fbsl {
-    animation: blink 2.7s infinite;
+    animation: blink 3s infinite;
+    animation-delay: 2s; /* Задержка для пятой кнопки */
 }
 
 .link-item.spb-snowboard {
-    animation: blink 3.1s infinite;
+    animation: blink 3s infinite;
+    animation-delay: 2.5s; /* Задержка для шестой кнопки */
 }
 
 .telegram {
