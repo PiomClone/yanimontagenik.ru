@@ -126,20 +126,41 @@ body {
     margin: 10px 0;
     border-radius: 10px;
     text-decoration: none;
-    background-color: #5d755d;
-    color: #ac4302;
+    background: linear-gradient(135deg, #6d8d6d, #5d755d);
+    color: white;
     transition: all 0.3s ease;
     text-align: left;
     border: none;
-    box-shadow: 0 4px 8px rgba(43, 65, 44, 0.3);
-    animation: blink 3s infinite;
+    box-shadow: 0 4px 15px rgba(43, 65, 44, 0.4);
+    animation: blink 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.link-item:hover::before {
+    left: 100%;
 }
 
 .link-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(43, 65, 44, 0.4);
-    background-color: #5d755d;
-    opacity: 0.9;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(43, 65, 44, 0.6);
+    background: linear-gradient(135deg, #7da07d, #6d8d6d);
+}
+
+.content {
+    flex: 1;
+    text-align: center;
 }
 
 .link-item.telegram {
@@ -284,10 +305,13 @@ body {
 .snowflake {
     position: absolute;
     top: -10vh;
-    color: #5d755d;
+    color: #c2255c; /* Более яркий цвет, чтобы было видно */
     user-select: none;
     pointer-events: none;
     will-change: transform;
+    font-size: 1.5em !important; /* Увеличим размер */
+    text-shadow: 0 0 5px rgba(194, 37, 92, 0.7); /* Добавим свечение */
+    z-index: 0; /* Понизим z-index, чтобы не перекрывать контент */
 }
 
 @media (max-width: 520px) {
