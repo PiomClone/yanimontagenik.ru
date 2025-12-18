@@ -92,6 +92,7 @@ body {
     50% { text-shadow: 0 0 15px rgba(166, 30, 77, 0.6); }
 }
 
+/* Стили для оригинального заголовка */
 .profile-title {
     font-size: 32px;
     margin-bottom: 10px;
@@ -102,6 +103,23 @@ body {
     font-style: normal;
     letter-spacing: 1px;
     animation: textGlow 4s ease-in-out infinite;
+}
+
+/* Альтернативные стили для Yani_Montagenik */
+.profile-title-great-vibes {
+    font-family: 'Great Vibes', cursive !important;
+}
+
+.profile-title-alex-brush {
+    font-family: 'Alex Brush', cursive !important;
+}
+
+.profile-title-allura {
+    font-family: 'Allura', cursive !important;
+}
+
+.profile-title-mr-de-haviland {
+    font-family: 'Mr De Haviland', cursive !important;
 }
 
 .bio {
@@ -161,6 +179,14 @@ body {
 .content {
     flex: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h3 {
+    text-align: center;
+    width: 100%;
 }
 
 .link-item.telegram {

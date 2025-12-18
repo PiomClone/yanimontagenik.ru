@@ -30,18 +30,22 @@
                 <div class="font-option" style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                     <span class="font-preview" style="font-family: 'Great Vibes', cursive; font-size: 32px; color: #a61e4d;">Yani_Montagenik</span>
                     <p style="margin: 5px 0 0 0; color: #555;">Great Vibes</p>
+                    <button onclick="changeProfileFont('profile-title-great-vibes')" style="margin-top: 10px; padding: 5px 10px; background: #a61e4d; color: white; border: none; border-radius: 5px; cursor: pointer;">Выбрать</button>
                 </div>
                 <div class="font-option" style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                     <span class="font-preview" style="font-family: 'Alex Brush', cursive; font-size: 32px; color: #a61e4d;">Yani_Montagenik</span>
                     <p style="margin: 5px 0 0 0; color: #555;">Alex Brush</p>
+                    <button onclick="changeProfileFont('profile-title-alex-brush')" style="margin-top: 10px; padding: 5px 10px; background: #a61e4d; color: white; border: none; border-radius: 5px; cursor: pointer;">Выбрать</button>
                 </div>
                 <div class="font-option" style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                     <span class="font-preview" style="font-family: 'Allura', cursive; font-size: 32px; color: #a61e4d;">Yani_Montagenik</span>
                     <p style="margin: 5px 0 0 0; color: #555;">Allura</p>
+                    <button onclick="changeProfileFont('profile-title-allura')" style="margin-top: 10px; padding: 5px 10px; background: #a61e4d; color: white; border: none; border-radius: 5px; cursor: pointer;">Выбрать</button>
                 </div>
                 <div class="font-option" style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                     <span class="font-preview" style="font-family: 'Mr De Haviland', cursive; font-size: 32px; color: #a61e4d;">Yani_Montagenik</span>
                     <p style="margin: 5px 0 0 0; color: #555;">Mr De Haviland</p>
+                    <button onclick="changeProfileFont('profile-title-mr-de-haviland')" style="margin-top: 10px; padding: 5px 10px; background: #a61e4d; color: white; border: none; border-radius: 5px; cursor: pointer;">Выбрать</button>
                 </div>
             </div>
 
@@ -147,6 +151,15 @@
             } else {
                 comparisonDiv.style.display = 'none';
             }
+        }
+
+        // Function to change profile title font
+        function changeProfileFont(fontClass) {
+            const titleElement = document.querySelector('.profile-title');
+            // Убираем все классы шрифтов
+            titleElement.classList.remove('profile-title-great-vibes', 'profile-title-alex-brush', 'profile-title-allura', 'profile-title-mr-de-haviland');
+            // Добавляем нужный класс
+            titleElement.classList.add(fontClass);
         }
 
         // Add keyboard shortcut to show comparison
