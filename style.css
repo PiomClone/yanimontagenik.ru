@@ -180,8 +180,8 @@ body {
 .link-item {
     display: flex;
     align-items: center;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px 15px; /* Уменьшил вертикальные отступы */
+    margin: 6px 0; /* Уменьшил отступы между кнопками */
     border-radius: 10px;
     text-decoration: none;
     background: linear-gradient(135deg, #6d8d6d, #5d755d);
