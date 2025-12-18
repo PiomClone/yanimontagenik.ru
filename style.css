@@ -67,18 +67,32 @@ body {
     object-fit: cover;
 }
 
+@keyframes textGlow {
+    0%, 100% { text-shadow: 0 0 5px rgba(166, 30, 77, 0.3); }
+    50% { text-shadow: 0 0 15px rgba(166, 30, 77, 0.6); }
+}
+
 .profile-title {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 500;
-    color: #5d755d;
+    color: #a61e4d; /* Оригинальный цвет из legacy данных */
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    animation: textGlow 3s ease-in-out infinite;
 }
 
 .bio {
     font-size: 15px;
     opacity: 0.9;
-    color: #5d755d;
+    color: #a61e4d; /* Оригинальный цвет био из legacy данных */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    animation: textGlow 4s ease-in-out infinite;
+    animation-delay: 0.5s;
 }
 
 .links-section {
