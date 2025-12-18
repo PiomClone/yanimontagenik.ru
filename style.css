@@ -63,9 +63,18 @@ body {
 
 .profile-header {
     padding: 40px 30px 20px;
-    background-color: #fffaf4;
+    background: linear-gradient(135deg, #fffaf4, #ebdece, #fffaf4);
+    background-size: 400% 400%;
     color: #143211;
     position: relative;
+    animation: gradientFlow 8s ease infinite;
+    border-bottom: 2px solid #ebdece;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .avatar {
