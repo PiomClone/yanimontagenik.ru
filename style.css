@@ -102,7 +102,7 @@ body {
 
 /* Стили для оригинального заголовка */
 .profile-title {
-    font-size: 32px;
+    font-size: 18px;
     margin-bottom: 10px;
     font-weight: 400;
     color: white; /* Новый цвет для контраста с фоном шапки */
@@ -116,7 +116,7 @@ body {
 /* Альтернативные стили для Yani_Montagenik - убедимся, что все стили сохраняются */
 .profile-title-great-vibes {
     font-family: 'Great Vibes', cursive !important;
-    font-size: 32px !important;
+    font-size: 18px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
@@ -128,7 +128,7 @@ body {
 
 .profile-title-alex-brush {
     font-family: 'Alex Brush', cursive !important;
-    font-size: 32px !important;
+    font-size: 18px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
@@ -140,7 +140,7 @@ body {
 
 .profile-title-allura {
     font-family: 'Allura', cursive !important;
-    font-size: 32px !important;
+    font-size: 18px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
@@ -152,7 +152,7 @@ body {
 
 .profile-title-mr-de-haviland {
     font-family: 'Mr De Haviland', cursive !important;
-    font-size: 32px !important;
+    font-size: 18px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
     color: white !important; /* Белый цвет для контраста с фоном шапки */
