@@ -105,9 +105,9 @@ body {
 .profile-title {
     font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 700;
     color: white; /* Новый цвет для контраста с фоном шапки */
-    font-family: 'Cookie', cursive;
+    font-family: 'Caveat', cursive;
     text-align: center;
     font-style: normal;
     letter-spacing: 0.5px;
@@ -156,6 +156,18 @@ body {
     text-align: center !important;
     font-style: normal !important;
     letter-spacing: 1px !important;
+}
+
+/* Шрифт для основного заголовка */
+.profile-title-caveat {
+    font-family: 'Caveat', cursive !important;
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+    font-weight: 700 !important;
+    color: white !important; /* Белый цвет для контраста с фоном шапки */
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 0.5px !important;
 }
 
 /* Шрифт для основного заголовка */
