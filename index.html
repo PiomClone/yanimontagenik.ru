@@ -107,16 +107,12 @@
                 snowflake.innerHTML = '❄';
 
                 // Random properties
-                const size = Math.random() * 1.5 + 0.5; // 0.5 to 2em
+                const size = Math.random() * 1.2 + 0.5; // 0.5 to 1.7em
                 const posX = Math.random() * 100;
-                const delay = Math.random() * 5;
-                const duration = Math.random() * 10 + 5; // 5 to 15s
 
                 snowflake.style.left = `${posX}vw`;
                 snowflake.style.fontSize = `${size}em`;
                 snowflake.style.opacity = Math.random() * 0.5 + 0.3; // 0.3 to 0.8
-                snowflake.style.animationDelay = `${delay}s`;
-                snowflake.style.animationDuration = `${duration}s`;
 
                 snowflakesContainer.appendChild(snowflake);
             }
