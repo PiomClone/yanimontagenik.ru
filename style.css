@@ -198,7 +198,6 @@ body {
     text-align: left;
     border: none;
     box-shadow: 0 3px 10px rgba(43, 65, 44, 0.4);
-    animation: blink 3s infinite;
     position: relative;
     overflow: hidden;
 }
@@ -245,36 +244,7 @@ body {
     margin: 0;
 }
 
-/* Анимации для кнопок с поочередной задержкой как в legacy */
-.link-item.instagram {
-    animation: blink 3s infinite;
-    animation-delay: 0s; /* Первая кнопка */
-}
-
-.link-item.telegram {
-    animation: blink 3s infinite;
-    animation-delay: 0.5s; /* Задержка для второй кнопки */
-}
-
-.link-item.vk {
-    animation: blink 3s infinite;
-    animation-delay: 1s; /* Задержка для третьей кнопки */
-}
-
-.link-item.fbsl {
-    animation: blink 3s infinite;
-    animation-delay: 1.5s; /* Задержка для четвертой кнопки */
-}
-
-.link-item.telegram-fbsl {
-    animation: blink 3s infinite;
-    animation-delay: 2s; /* Задержка для пятой кнопки */
-}
-
-.link-item.spb-snowboard {
-    animation: blink 3s infinite;
-    animation-delay: 2.5s; /* Задержка для шестой кнопки */
-}
+/* Убраны постоянные анимации с кнопок */
 
 .telegram {
     background: #c2255c !important;
