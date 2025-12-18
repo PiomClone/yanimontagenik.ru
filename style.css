@@ -114,21 +114,53 @@ body {
     animation: textGlow 4s ease-in-out infinite;
 }
 
-/* Альтернативные стили для Yani_Montagenik */
+/* Альтернативные стили для Yani_Montagenik - убедимся, что все стили сохраняются */
 .profile-title-great-vibes {
     font-family: 'Great Vibes', cursive !important;
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+    font-weight: 400 !important;
+    color: #a61e4d !important;
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 1px !important;
+    animation: textGlow 4s ease-in-out infinite !important;
 }
 
 .profile-title-alex-brush {
     font-family: 'Alex Brush', cursive !important;
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+    font-weight: 400 !important;
+    color: #a61e4d !important;
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 1px !important;
+    animation: textGlow 4s ease-in-out infinite !important;
 }
 
 .profile-title-allura {
     font-family: 'Allura', cursive !important;
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+    font-weight: 400 !important;
+    color: #a61e4d !important;
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 1px !important;
+    animation: textGlow 4s ease-in-out infinite !important;
 }
 
 .profile-title-mr-de-haviland {
     font-family: 'Mr De Haviland', cursive !important;
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+    font-weight: 400 !important;
+    color: #a61e4d !important;
+    text-align: center !important;
+    font-style: normal !important;
+    letter-spacing: 1px !important;
+    animation: textGlow 4s ease-in-out infinite !important;
 }
 
 .bio {
