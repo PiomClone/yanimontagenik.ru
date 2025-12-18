@@ -170,8 +170,8 @@ body {
 }
 
 /* Шрифт для основного заголовка */
-.profile-title-cookie {
-    font-family: 'Cookie', cursive !important;
+.profile-title-caveat {
+    font-family: 'Caveat', cursive !important;
     font-size: 18px !important;
     margin-bottom: 10px !important;
     font-weight: 400 !important;
