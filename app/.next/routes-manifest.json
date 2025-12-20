@@ -2,17 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/yanimontagenik.ru",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/yanimontagenik.ru/",
-      "destination": "/yanimontagenik.ru",
-      "basePath": false,
-      "internal": true,
-      "priority": true,
-      "statusCode": 308,
-      "regex": "^/yanimontagenik\\.ru/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -24,13 +15,7 @@
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/yanimontagenik.ru//_next/:path+",
-        "destination": "/yanimontagenik.ru/_next/:path+",
-        "regex": "^/yanimontagenik\\.ru//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
+    "beforeFiles": [],
     "afterFiles": [],
     "fallback": []
   },

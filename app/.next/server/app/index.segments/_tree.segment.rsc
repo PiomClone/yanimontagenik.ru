@@ -1,2 +1,2 @@
-:HL["/yanimontagenik.ru/_next/static/chunks/d91cbc7b42b35e21.css","style"]
-0:{"buildId":"PAgpdfiZufFAYLBheECy0","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/_next/static/chunks/ef99cb1923c048de.css","style"]
+0:{"buildId":"Prd2s-QCvY7y3JTQrs-z4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

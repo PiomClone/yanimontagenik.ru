@@ -42,7 +42,7 @@ export default function BioLinkPage() {
         {/* Profile Section */}
         <div className="flex flex-col items-center text-center mb-8">
           <Avatar className="h-24 w-24 mb-4 ring-4 ring-primary/20">
-            <AvatarImage src="/yanimontagenik.ru/assets/profile_image.jpg" alt="Yani_Montagenik" />
+            <AvatarImage src="/assets/profile_image.jpg" alt="Yani_Montagenik" />
             <AvatarFallback className="text-2xl bg-primary text-primary-foreground">YM</AvatarFallback>
           </Avatar>
 

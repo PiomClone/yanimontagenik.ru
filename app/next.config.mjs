@@ -4,8 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/yanimontagenik.ru',
-  assetPrefix: '/yanimontagenik.ru/',
+  // basePath и assetPrefix не нужны для custom domain
+  // Раскомментируйте только если используете GitHub Pages без custom domain
+  // basePath: '/yanimontagenik.ru',
+  // assetPrefix: '/yanimontagenik.ru/',
 }
 
 export default nextConfig

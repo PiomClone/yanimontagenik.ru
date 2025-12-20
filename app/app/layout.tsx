@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: "Yani_Montagenik — сноуборд как способ жить. Все мои соцсети, команда и сборная на одной странице.",
   generator: "v0.app",
   icons: {
-    icon: "/yanimontagenik.ru/assets/profile_image.jpg",
-    apple: "/yanimontagenik.ru/assets/profile_image.jpg",
+    icon: "/assets/profile_image.jpg",
+    apple: "/assets/profile_image.jpg",
   },
 }
 
