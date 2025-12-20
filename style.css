@@ -190,7 +190,7 @@ body {
 /* Убраны постоянные анимации с кнопок */
 
 .telegram {
-    background: linear-gradient(135deg, #d66e8c, #c2255c) !important;
+    background: #c2255cf2 !important;
     animation: blink 2.5s ease-in-out infinite;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .instagram {
-    background: linear-gradient(135deg, #c05a7c, #a61e4d) !important;
+    background: #c2255cf2 !important;
     animation: blink 3s ease-in-out infinite;
 }
 
