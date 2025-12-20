@@ -239,6 +239,36 @@ body {
     background: linear-gradient(to left, transparent, #dee2e6);
 }
 
+/* Footer */
+.footer {
+    padding: 24px 24px 28px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #868e96;
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-tagline {
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    color: #c2255c;
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.8;
+}
+
 /* Snowflakes animation */
 @keyframes fall {
     0% {
@@ -313,6 +343,18 @@ body {
     .link-subtitle {
         font-size: 12px;
     }
+
+    .footer {
+        padding: 20px 20px 24px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-tagline {
+        font-size: 14px;
+    }
 }
 
 /* Small mobile devices */
@@ -355,5 +397,17 @@ body {
         width: 20px;
         height: 20px;
         margin-right: 10px;
+    }
+
+    .footer {
+        padding: 18px 16px 22px;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
+
+    .footer-tagline {
+        font-size: 13px;
     }
 }
