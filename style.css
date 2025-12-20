@@ -63,7 +63,7 @@ body {
 }
 
 .profile-header {
-    padding: 40px 30px 20px;
+    padding: 30px 30px 50px;
     background: rgb(240, 101, 149); /* Розовый фон шапки */
     color: #fffaf4;
     position: relative;
@@ -79,7 +79,7 @@ body {
 .avatar {
     width: 95px;
     height: 95px;
-    margin: 0 auto 20px;
+    margin: 0 auto -47px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(255, 250, 244, 0.3);
@@ -87,6 +87,8 @@ body {
     align-items: center;
     justify-content: center;
     background: #ddd;
+    position: relative;
+    z-index: 10;
 }
 
 .avatar img {
@@ -122,13 +124,13 @@ body {
 }
 
 .links-section {
-    padding: 20px;
+    padding: 60px 20px 20px;
 }
 
 .link-item {
     display: flex;
     align-items: center;
-    padding: 12px 15px;
+    padding: 10px 15px;
     margin: 8px 0; /* Увеличенные отступы между кнопками */
     border-radius: 10px;
     text-decoration: none;
