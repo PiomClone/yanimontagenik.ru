@@ -64,7 +64,7 @@ body {
 
 .profile-header {
     padding: 40px 30px 20px;
-    background: #5d755d; /* Зелёный фон шапки */
+    background: rgb(240, 101, 149); /* Розовый фон шапки */
     color: #fffaf4;
     position: relative;
     border-bottom: none;
