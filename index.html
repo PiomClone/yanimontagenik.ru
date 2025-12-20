@@ -55,9 +55,7 @@
                 </div>
 
                 <a href="http://fbsl.ru" class="link secondary" target="_blank">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
-                    </svg>
+                    <i class="icon fas fa-snowboarding" style="font-size: 24px;"></i>
                     <div class="link-content">
                         <span class="link-title">FBSL.RU</span>
                         <span class="link-subtitle">FunBoardSchool</span>
@@ -83,5 +81,33 @@
 
     <!-- Floating snowflakes -->
     <div class="snow"></div>
+
+    <script>
+        // Create snowflakes
+        document.addEventListener('DOMContentLoaded', function() {
+            const snowContainer = document.querySelector('.snow');
+            const snowflakeCount = 25;
+
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄';
+
+                // Random properties
+                const size = Math.random() * 2 + 0.3; // 0.3 to 2.3em (от мелкой пурги до крупных)
+                const posX = Math.random() * 100;
+                const duration = Math.random() * 10 + 8; // 8-18 seconds
+                const delay = Math.random() * 5; // 0-5 seconds delay
+
+                snowflake.style.left = `${posX}vw`;
+                snowflake.style.fontSize = `${size}em`;
+                snowflake.style.opacity = Math.random() * 0.4 + 0.2; // 0.2 to 0.6
+                snowflake.style.animationDuration = `${duration}s`;
+                snowflake.style.animationDelay = `${delay}s`;
+
+                snowContainer.appendChild(snowflake);
+            }
+        });
+    </script>
 </body>
 </html>

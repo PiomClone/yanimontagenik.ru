@@ -13,7 +13,8 @@ body {
     justify-content: center;
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .container {
@@ -196,6 +197,17 @@ body {
 }
 
 /* Snowflakes animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateZ(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) translateZ(0);
+        opacity: 0;
+    }
+}
+
 .snow {
     position: fixed;
     top: 0;
@@ -206,34 +218,14 @@ body {
     z-index: 0;
 }
 
-.snow::before,
-.snow::after {
-    content: '❄';
+.snowflake {
     position: absolute;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 20px;
+    top: -10vh;
+    color: rgba(255, 255, 255, 0.6);
+    user-select: none;
+    pointer-events: none;
+    will-change: transform;
     animation: fall 10s linear infinite;
-}
-
-.snow::before {
-    left: 20%;
-    animation-delay: 0s;
-}
-
-.snow::after {
-    left: 80%;
-    animation-delay: 5s;
-}
-
-@keyframes fall {
-    0% {
-        top: -10%;
-        opacity: 1;
-    }
-    100% {
-        top: 100%;
-        opacity: 0;
-    }
 }
 
 /* Mobile responsive */
