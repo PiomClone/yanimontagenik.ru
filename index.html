@@ -4,127 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yani_Montagenik — сноуборд как способ жить</title>
-
-    <!-- Base icons -->
     <link rel="icon" href="assets/profile_image.jpg">
     <link rel="apple-touch-icon" sizes="300x300" href="assets/profile_image.jpg">
-
-    <!-- SEO & social preview -->
     <meta name="description" content="Yani_Montagenik — сноуборд как способ жить. Все мои соцсети, команда и сборная на одной странице.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Yani_Montagenik — сноуборд как способ жить">
-    <meta property="og:description" content="Мой Telegram, VK, Instagram, команда FunBoardSchool и Федерация сноуборда Санкт‑Петербурга.">
-    <meta property="og:image" content="assets/profile_image.jpg">
-    <meta property="og:locale" content="ru_RU">
-
-    <!-- Styles & fonts -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="snowflakes" aria-hidden="true"></div>
     <div class="container">
-        <div class="profile-card">
-            <div class="profile-header">
-                <div class="avatar">
-                    <img src="assets/profile_image.jpg" alt="Yani_Montagenik">
+        <div class="card">
+            <!-- Header with gradient -->
+            <div class="header">
+                <div class="avatar-wrapper">
+                    <img src="assets/profile_image.jpg" alt="Yani_Montagenik" class="avatar">
                 </div>
+                <h1 class="name">Yani_Montagenik</h1>
+                <p class="tagline">сноуборд как способ жить</p>
             </div>
 
-            <div class="profile-info">
-                <h1 class="profile-title">Yani_Montagenik</h1>
-                <p class="bio">сноуборд как способ жить</p>
-            </div>
-
-            <div class="links-section">
-                <!-- Main Links -->
-                <a href="https://t.me/yani_montagenik" class="link-item telegram" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="content">
-                        <h3>Мой Telegram&gt;&gt;&gt;</h3>
-                    </div>
+            <!-- Links -->
+            <div class="links">
+                <a href="https://t.me/yani_montagenik" class="link primary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    <span>Telegram</span>
                 </a>
 
-                <a href="https://vk.ru/club234696491" class="link-item vk" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-snowboarding"></i>
-                    </div>
-                    <div class="content">
-                        <h3>Мой ВКонтакте&gt;&gt;&gt;</h3>
-                    </div>
+                <a href="https://vk.ru/club234696491" class="link primary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z"/>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                    </svg>
+                    <span>ВКонтакте</span>
                 </a>
 
-                <a href="https://instagram.com/yani_montagenik/" class="link-item instagram" target="_blank">
-                    <div class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <div class="content">
-                        <h3>Мой Instagram&gt;&gt;&gt;</h3>
-                    </div>
+                <a href="https://instagram.com/yani_montagenik/" class="link primary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                    </svg>
+                    <span>Instagram</span>
                 </a>
 
-                <!-- Divider -->
                 <div class="divider">
-                    <div class="block-break-inner has-icon" style="height: 45px;"><span><svg role="none" data-mode="fill" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M29.952 15.584h0c-3.616-.224-7.2-.48-10.848-1.408-.064 0-.064-.032-.032-.096l3.168-4.992c.032-.064.032-.064 0-.032-1.408 1.44-2.784 2.816-4.384 4-.032.032-.096.032-.096-.032-1.024-3.616-1.344-7.296-1.632-10.944 0-.064 0-.064 0 0-.256 3.616-.608 7.232-1.536 10.784-.032.064-.064.064-.128.032-1.6-1.152-2.976-2.528-4.384-3.872-.032-.032-.032-.032 0 0 1.152 1.6 2.272 3.168 3.232 4.928.032.064.032.096-.032.128-3.712.992-7.456 1.312-11.232 1.568-.064 0-.064 0 0 0 3.776.32 7.552.64 11.36 1.76.032 0 .064.064.032.096l-3.616 4.48c-.032.032 0 .032.032 0 1.408-1.184 2.816-2.368 4.416-3.392.032 0 .096 0 .096.064 1.152 3.712 1.568 7.488 1.888 11.264 0 .064 0 .064.032 0 .192-3.808.448-7.616 1.44-11.392 0-.064.064-.064.096-.032l2.592 1.6c.832.512 1.632 1.088 2.432 1.664.032.032.032.032 0-.032-1.344-1.344-2.688-2.72-3.904-4.32-.032-.064-.032-.096.032-.096 1.28-.288 2.464-.608 3.648-.832 1.248-.224 2.496-.384 3.744-.544 1.184-.16 2.4-.224 3.584-.352z"></path></svg></span></div>
+                    <span class="divider-text">моя команда и сборная</span>
                 </div>
 
-                <!-- Secondary Info -->
-                <div class="text-block">
-                    <p><strong>моя команда и сборная</strong> ‌может быть интересно)</p>
-                </div>
-
-                <!-- More Links -->
-                <a href="http://fbsl.ru" class="link-item fbsl" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <div class="content">
-                        <h3>FBSL.RU</h3>
-                        <p>FunBoardSchool</p>
+                <a href="http://fbsl.ru" class="link secondary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    <div class="link-content">
+                        <span class="link-title">FBSL.RU</span>
+                        <span class="link-subtitle">FunBoardSchool</span>
                     </div>
                 </a>
 
-                <a href="https://t.me/funboardschool" class="link-item telegram-fbsl" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-paper-plane"></i>
-                    </div>
-                    <div class="content">
-                        <h3>TELEGRAM FBSL</h3>
-                    </div>
+                <a href="https://t.me/funboardschool" class="link secondary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    <span>Telegram FBSL</span>
                 </a>
 
-                <a href="https://t.me/spbrsf" class="link-item spb-snowboard" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-paper-plane"></i>
-                    </div>
-                    <div class="content">
-                        <h3>ФЕДЕРАЦИЯ СНОУБОРДА САНКТ ПЕТЕРБУРГА</h3>
-                    </div>
+                <a href="https://t.me/spbrsf" class="link secondary" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    <span>Федерация сноуборда СПБ</span>
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Аналитика: раскомментируйте и вставьте свой счётчик при необходимости -->
-    <!-- Пример Яндекс.Метрики:
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0];
-        k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(YOUR_COUNTER_ID, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/YOUR_COUNTER_ID" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    -->
-
-    <script src="script.js"></script>
+    <!-- Floating snowflakes -->
+    <div class="snow"></div>
 </body>
 </html>

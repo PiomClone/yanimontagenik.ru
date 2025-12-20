@@ -53,7 +53,7 @@ body {
 
 .name {
     font-family: 'Caveat', cursive;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 700;
     color: white;
     margin-bottom: 8px;
@@ -106,6 +106,17 @@ body {
 .link.primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(194, 37, 92, 0.4);
+}
+
+.link.vk {
+    background: linear-gradient(135deg, #ff9cc7, #ff7aa8);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 122, 168, 0.3);
+}
+
+.link.vk:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 122, 168, 0.4);
 }
 
 .link.secondary {
