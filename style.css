@@ -64,10 +64,10 @@ body {
 
 .profile-header {
     padding: 40px 30px 20px;
-    background: #fffaf4; /* Цвет фона из оригинального legacy дизайна */
-    color: #143211; /* Цвет текста из оригинального дизайна */
+    background: #5d755d; /* Зелёный фон шапки */
+    color: #fffaf4;
     position: relative;
-    border-bottom: 1px solid rgba(227, 218, 201, 0.5);
+    border-bottom: none;
 }
 
 @keyframes gradientFlow {
@@ -82,7 +82,7 @@ body {
     margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #5d755d;
+    border: 3px solid rgba(255, 250, 244, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,96 +100,25 @@ body {
     50% { text-shadow: 0 0 15px rgba(166, 30, 77, 0.6); }
 }
 
-/* Стили для оригинального заголовка */
+/* Заголовок профиля */
 .profile-title {
+    font-family: 'Caveat', cursive;
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 700;
-    color: white; /* Новый цвет для контраста с фоном шапки */
-    font-family: 'Caveat', cursive;
+    color: #fffaf4; /* Светлый цвет заголовка на зелёном фоне */
     text-align: center;
     font-style: normal;
     letter-spacing: 0.5px;
 }
 
-/* Альтернативные стили для Yani_Montagenik - убедимся, что все стили сохраняются */
-.profile-title-great-vibes {
-    font-family: 'Great Vibes', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 1px !important;
-}
-
-.profile-title-alex-brush {
-    font-family: 'Alex Brush', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 1px !important;
-}
-
-.profile-title-allura {
-    font-family: 'Allura', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 1px !important;
-}
-
-.profile-title-mr-de-haviland {
-    font-family: 'Mr De Haviland', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 1px !important;
-}
-
-/* Шрифт для основного заголовка */
-.profile-title-caveat {
-    font-family: 'Caveat', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 700 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 0.5px !important;
-}
-
-/* Шрифт для основного заголовка */
-.profile-title-caveat {
-    font-family: 'Caveat', cursive !important;
-    font-size: 18px !important;
-    margin-bottom: 10px !important;
-    font-weight: 400 !important;
-    color: white !important; /* Белый цвет для контраста с фоном шапки */
-    text-align: center !important;
-    font-style: normal !important;
-    letter-spacing: 0.5px !important;
-}
-
 .bio {
     font-size: 15px;
-    opacity: 0.9;
-    color: white; /* Новый цвет для контраста с фоном шапки */
+    opacity: 0.95;
+    color: #fffaf4; /* Светлый цвет подписи на зелёном фоне */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    animation: textGlow 4s ease-in-out infinite;
-    animation-delay: 0.5s;
 }
 
 .links-section {
@@ -208,9 +137,10 @@ body {
     transition: all 0.3s ease;
     text-align: left;
     border: none;
-    box-shadow: 0 4px 15px rgba(43, 65, 44, 0.4);
+    box-shadow: 0 4px 10px rgba(43, 65, 44, 0.25);
     position: relative;
     overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 .link-item::before {
@@ -230,7 +160,7 @@ body {
 
 .link-item:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(43, 65, 44, 0.6);
+    box-shadow: 0 8px 18px rgba(43, 65, 44, 0.4);
     background: linear-gradient(135deg, #7da07d, #6d8d6d);
 }
 
@@ -259,26 +189,32 @@ body {
 
 .telegram {
     background: linear-gradient(135deg, #d66e8c, #c2255c) !important;
+    animation: blink 2.5s ease-in-out infinite;
 }
 
 .vk {
     background: linear-gradient(135deg, #ff7aa8, #ff4d89) !important;
+    animation: blink 2.7s ease-in-out infinite;
 }
 
 .instagram {
     background: linear-gradient(135deg, #c05a7c, #a61e4d) !important;
+    animation: blink 3s ease-in-out infinite;
 }
 
 .fbsl {
     background: linear-gradient(135deg, #fdd86c, #fcc419) !important;
+    animation: blink 3.2s ease-in-out infinite;
 }
 
 .telegram-fbsl {
     background: linear-gradient(135deg, #ffe285, #ffd43b) !important;
+    animation: blink 3.4s ease-in-out infinite;
 }
 
 .spb-snowboard {
     background: linear-gradient(135deg, #9bb4fc, #748ffc) !important;
+    animation: blink 3.6s ease-in-out infinite;
 }
 
 .icon {
