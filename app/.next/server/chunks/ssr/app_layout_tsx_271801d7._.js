@@ -1,0 +1,3 @@
+module.exports=[33290,a=>{"use strict";var b=a.i(7997);function c({children:a}){return(0,b.jsx)("html",{lang:"ru",children:(0,b.jsx)("body",{className:"font-sans antialiased",children:a})})}a.s(["default",()=>c,"metadata",0,{title:"Yani_Montagenik — сноуборд как способ жить",description:"Yani_Montagenik — сноуборд как способ жить. Все мои соцсети, команда и сборная на одной странице.",generator:"v0.app",icons:{icon:"/assets/profile_image.jpg",apple:"/assets/profile_image.jpg"}}])}];
+
+//# sourceMappingURL=app_layout_tsx_271801d7._.js.map
