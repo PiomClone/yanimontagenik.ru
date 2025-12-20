@@ -14,6 +14,12 @@ body {
     overflow-x: hidden;
 }
 
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 480px;
@@ -21,6 +27,12 @@ body {
     position: relative;
     z-index: 1;
     padding: 20px 0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 0;
+    }
 }
 
 .card {
@@ -47,6 +59,13 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+}
+
+@media (max-width: 480px) {
+    .header-video {
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .header-overlay {
@@ -268,11 +287,11 @@ body {
     }
 
     .name {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .tagline {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .links {
@@ -281,5 +300,60 @@ body {
 
     .link {
         padding: 14px 16px;
+    }
+
+    .link span {
+        font-size: 14px;
+    }
+
+    .link-title {
+        font-size: 14px;
+    }
+
+    .link-subtitle {
+        font-size: 12px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 375px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 8px 0;
+    }
+
+    .header {
+        padding: 25px 16px 20px;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .tagline {
+        font-size: 11px;
+    }
+
+    .links {
+        padding: 20px 16px;
+    }
+
+    .link {
+        padding: 12px 14px;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
     }
 }
