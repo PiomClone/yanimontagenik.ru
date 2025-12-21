@@ -269,15 +269,39 @@ body {
     opacity: 0.8;
 }
 
-/* Snowflakes animation */
+/* Snowflakes animation with depth of field */
 @keyframes fall {
     0% {
-        transform: translateY(-10vh) translateZ(0);
+        transform: translateY(-10vh) translateX(0) translateZ(0);
         opacity: 1;
     }
+    25% {
+        transform: translateY(25vh) translateX(calc(var(--drift, 0px) * 0.5)) translateZ(0);
+    }
+    50% {
+        transform: translateY(50vh) translateX(var(--drift, 0px)) translateZ(0);
+    }
+    75% {
+        transform: translateY(75vh) translateX(calc(var(--drift, 0px) * 1.5)) translateZ(0);
+    }
     100% {
-        transform: translateY(110vh) translateZ(0);
+        transform: translateY(110vh) translateX(calc(var(--drift, 0px) * 2)) translateZ(0);
         opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-5px);
     }
 }
 
@@ -289,16 +313,20 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 0;
+    overflow: hidden;
 }
 
 .snowflake {
     position: absolute;
     top: -10vh;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     user-select: none;
     pointer-events: none;
-    will-change: transform;
-    animation: fall 10s linear infinite;
+    will-change: transform, filter;
+    animation: fall linear infinite;
+    animation-duration: var(--duration, 10s);
+    animation-delay: var(--delay, 0s);
+    transform-origin: center;
 }
 
 /* Mobile responsive */
@@ -409,5 +437,136 @@ body {
 
     .footer-tagline {
         font-size: 13px;
+    }
+}
+
+/* Content Section */
+.content-section {
+    padding: 0 24px 24px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(194, 37, 92, 0.2);
+}
+
+.content-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Квадратное соотношение */
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.content-item:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-overlay i {
+    font-size: 32px;
+    color: white;
+}
+
+.content-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.content-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.content-source {
+    font-size: 11px;
+    color: #868e96;
+    font-weight: 500;
+}
+
+/* Mobile responsive for content */
+@media (max-width: 520px) {
+    .content-section {
+        padding: 0 20px 20px;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 12px;
+    }
+
+    .content-info {
+        padding: 10px;
+    }
+
+    .content-title {
+        font-size: 12px;
+    }
+
+    .content-source {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .content-section {
+        padding: 0 16px 16px;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .content-overlay i {
+        font-size: 24px;
     }
 }

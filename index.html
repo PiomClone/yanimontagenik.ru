@@ -96,27 +96,61 @@
     <div class="snow"></div>
 
     <script>
-        // Create snowflakes
+        // Create snowflakes with depth of field and varying speeds
         document.addEventListener('DOMContentLoaded', function() {
             const snowContainer = document.querySelector('.snow');
-            const snowflakeCount = 25;
+            const snowflakeCount = 40; // Увеличено количество для лучшего эффекта
 
             for (let i = 0; i < snowflakeCount; i++) {
                 const snowflake = document.createElement('div');
                 snowflake.classList.add('snowflake');
                 snowflake.innerHTML = '❄';
 
-                // Random properties
-                const size = Math.random() * 2 + 0.3; // 0.3 to 2.3em (от мелкой пурги до крупных)
+                // Создаем слои глубины: ближний, средний, дальний
+                const depthLayer = Math.random();
+                let size, duration, opacity, blur, zIndex;
+                
+                if (depthLayer < 0.3) {
+                    // Ближний слой - крупные, быстрые, четкие
+                    size = Math.random() * 1.5 + 1.5; // 1.5 to 3em
+                    duration = Math.random() * 4 + 4; // 4-8 seconds (быстрее)
+                    opacity = Math.random() * 0.3 + 0.7; // 0.7 to 1.0 (ярче)
+                    blur = 0; // Без размытия
+                    zIndex = 10;
+                } else if (depthLayer < 0.7) {
+                    // Средний слой - средние, средняя скорость, легкое размытие
+                    size = Math.random() * 1 + 0.8; // 0.8 to 1.8em
+                    duration = Math.random() * 6 + 8; // 8-14 seconds
+                    opacity = Math.random() * 0.3 + 0.4; // 0.4 to 0.7
+                    blur = Math.random() * 1 + 0.5; // 0.5 to 1.5px
+                    zIndex = 5;
+                } else {
+                    // Дальний слой - мелкие, медленные, сильно размытые
+                    size = Math.random() * 0.5 + 0.3; // 0.3 to 0.8em
+                    duration = Math.random() * 8 + 12; // 12-20 seconds (медленнее)
+                    opacity = Math.random() * 0.2 + 0.2; // 0.2 to 0.4 (темнее)
+                    blur = Math.random() * 2 + 1.5; // 1.5 to 3.5px
+                    zIndex = 1;
+                }
+
                 const posX = Math.random() * 100;
-                const duration = Math.random() * 10 + 8; // 8-18 seconds
                 const delay = Math.random() * 5; // 0-5 seconds delay
+                const horizontalDrift = (Math.random() - 0.5) * 30; // Горизонтальное смещение
+                const swayDuration = Math.random() * 2 + 2; // 2-4 seconds для покачивания
+                const swayDelay = Math.random() * 2; // Задержка покачивания
 
                 snowflake.style.left = `${posX}%`;
                 snowflake.style.fontSize = `${size}em`;
-                snowflake.style.opacity = Math.random() * 0.4 + 0.2; // 0.2 to 0.6
-                snowflake.style.animationDuration = `${duration}s`;
-                snowflake.style.animationDelay = `${delay}s`;
+                snowflake.style.opacity = opacity;
+                snowflake.style.filter = `blur(${blur}px)`;
+                snowflake.style.zIndex = zIndex;
+                
+                // CSS переменные для анимации
+                snowflake.style.setProperty('--drift', `${horizontalDrift}px`);
+                snowflake.style.setProperty('--duration', `${duration}s`);
+                snowflake.style.setProperty('--delay', `${delay}s`);
+                snowflake.style.setProperty('--sway-duration', `${swayDuration}s`);
+                snowflake.style.setProperty('--sway-delay', `${swayDelay}s`);
 
                 snowContainer.appendChild(snowflake);
             }
