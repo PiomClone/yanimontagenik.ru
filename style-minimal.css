@@ -647,123 +647,114 @@ section {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .container {
-        padding: 0 24px;
+        padding: 0 20px;
     }
 
     .nav-container {
-        padding: 16px 24px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-logo {
+        font-size: 16px;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    .hero-section {
+        min-height: 80vh;
+        padding: 100px 20px 60px;
     }
 
     .hero-title {
-        font-size: 48px;
+        font-size: 42px;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
     }
 
     .hero-subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     .section-title {
-        font-size: 36px;
-        margin-bottom: 40px;
+        font-size: 32px;
+        margin-bottom: 32px;
+        letter-spacing: -1px;
     }
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .about-stats {
         flex-direction: row;
         justify-content: space-around;
+        gap: 20px;
+    }
+
+    .stat-item {
+        flex: 1;
     }
 
     .stat-number {
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    .stat-label {
+        font-size: 12px;
     }
 
     .achievements-grid {
         grid-template-columns: 1fr;
-    }
-
-    .media-grid {
-        grid-template-columns: 1fr;
         gap: 24px;
-    }
-
-    .media-overlay i {
-        font-size: 48px;
-    }
-
-    .posts-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .links-grid {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .social-link {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-links {
-        gap: 16px;
-    }
-
-    .nav-link {
-        font-size: 14px;
-    }
-
-    .hero-section {
-        padding: 100px 20px 60px;
-    }
-
-    .hero-title {
-        font-size: 36px;
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-    }
-
-    .section-title {
-        font-size: 28px;
-    }
-
-    .about-description {
-        font-size: 16px;
-    }
-
-    .stat-number {
-        font-size: 32px;
     }
 
     .achievement-card {
         padding: 32px 24px;
     }
 
-    .team-link {
-        padding: 24px;
+    .achievement-icon {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .achievement-title {
+        font-size: 20px;
+    }
+
+    .achievement-text {
+        font-size: 15px;
     }
 
     .media-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .media-thumbnail {
+        padding-top: 75%;
+    }
+
+    .media-overlay i {
+        font-size: 40px;
     }
 
     .media-info {
@@ -776,10 +767,6 @@ section {
 
     .media-desc {
         font-size: 14px;
-    }
-
-    .media-overlay i {
-        font-size: 40px;
     }
 
     .posts-grid {
@@ -801,6 +788,262 @@ section {
 
     .post-overlay i {
         font-size: 36px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .team-link {
+        padding: 24px;
+    }
+
+    .team-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .team-name {
+        font-size: 18px;
+    }
+
+    .team-desc {
+        font-size: 13px;
+    }
+
+    .links-grid {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .social-link {
+        justify-content: center;
+        padding: 14px 24px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-link {
+        justify-content: center;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .nav-container {
+        padding: 10px 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav-logo {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+
+    .hero-section {
+        min-height: 70vh;
+        padding: 80px 16px 40px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+    }
+
+    .about-description {
+        font-size: 15px;
+        margin-bottom: 16px;
+        line-height: 1.7;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .achievement-card {
+        padding: 24px 20px;
+    }
+
+    .achievement-icon {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .achievement-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .achievement-text {
+        font-size: 14px;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .media-thumbnail {
+        padding-top: 75%;
+    }
+
+    .media-info {
+        padding: 16px;
+    }
+
+    .media-title {
+        font-size: 16px;
+    }
+
+    .media-desc {
+        font-size: 13px;
+    }
+
+    .media-overlay i {
+        font-size: 36px;
+    }
+
+    .media-badge {
+        top: 12px;
+        right: 12px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .post-thumbnail {
+        padding-top: 100%;
+    }
+
+    .post-content {
+        padding: 14px;
+    }
+
+    .post-date {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .post-title {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .post-excerpt {
+        font-size: 12px;
+    }
+
+    .post-overlay i {
+        font-size: 32px;
+    }
+
+    .post-platform {
+        width: 32px;
+        height: 32px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .post-platform i {
+        font-size: 18px;
+    }
+
+    .team-link {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .team-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .team-name {
+        font-size: 16px;
+    }
+
+    .team-desc {
+        font-size: 12px;
+    }
+
+    .social-link {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .contact-text {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .contact-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .view-all-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-tagline {
+        font-size: 20px;
     }
 }
 
